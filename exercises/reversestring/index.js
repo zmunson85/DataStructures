@@ -51,7 +51,7 @@ Refactored with built in JS methods */
 
 // module.exports = reverse;
 
-// simplified solution using built in JS methods, split then,  reverse and the split-substring, capture reversed values and join as a return statement, 
+// simplified solution using built in JS methods, split then,  now reverse the split-substring, capture reversed values and join as a return statement, 
 
 function reverse(str) {
     const arr = str.split('');
