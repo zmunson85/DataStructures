@@ -26,13 +26,13 @@
 /*
 Solution 2:
 Refactored with built in JS methods */
-function reverse(str) {
-    return str
-        .split('')
-        .reverse()
-        .join('');
-}
-module.exports = reverse;
+// function reverse(str) {
+//     return str
+//         .split('')
+//         .reverse()
+//         .join('');
+// }
+// module.exports = reverse;
 /*  NOTES:
 .split('') split method splits string into an array of substrings, then returns that array.
 .reverse() reverse method reverses the order of elements in an array.
@@ -51,4 +51,13 @@ module.exports = reverse;
 
 // module.exports = reverse;
 
+// simplified solution using built in JS methods, split then,  reverse and the split-substring, capture reversed values and join as a return statement, 
+
+function reverse(str) {
+    const arr = str.split('');
+    arr.reverse();
+    return arr.join('');
+
+}
+module.exports = reverse;
 
